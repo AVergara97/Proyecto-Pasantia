@@ -1,0 +1,91 @@
+<section class="cr-container">
+  <div id="seccion_inicial" flex="">
+    <static-image class="hide-in-preview" folder="Ficha_cliente" file="TAPP.png"
+      style='height: 65px;width: 140px;display: block;' />
+    <h3 ng-bind-html="text('NombreCliente')" />
+    <p>
+      <span ng-bind-html="label('RutCliente')" />
+      <span ng-bind-html="text('RutCliente')" />
+    </p>
+    <p>
+      <span ng-bind-html="label('NombreCliente')" />
+      <span ng-bind-html="text('NombreCliente')" />
+    </p>
+    <p>
+      <span ng-bind-html="label('EstadoCliente')" />
+      <span ng-bind-html="text('EstadoCliente')" />
+    </p>
+  </div>
+  <div class="hide-in-preview cr-flex">
+    <div flex="">
+      <div class="cr-box">
+        <h4 class="cr-border-bottom">Datos Personales</h4>
+        <p>
+          <span ng-bind-html="label('Email')" />
+          <span ng-bind-html="text('Email')" />
+        </p>
+        <p>
+          <span ng-bind-html="label('Telefono')" />
+          <span ng-bind-html="text('Telefono')" />
+        </p>
+        <p>
+          <span ng-bind-html="label('Nacionalidad')" />
+          <span ng-bind-html="text('Nacionalidad')" />
+        </p>
+        <p>
+          <span ng-bind-html="label('Actividad')" />
+          <span ng-bind-html="text('Actividad')" />
+        </p>
+        <p>
+          <span ng-bind-html="label('Direccion')" />
+          <span ng-bind-html="text('Direccion')" />
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hide-in-preview cr-flex">
+    <div flex="">
+      <div class="cr-box">
+        <h4 class="cr-border-bottom">Datos Transaccionales</h4>
+        <p>
+          <span ng-bind-html="label('numero_transacciones')" />
+          <span ng-bind-html="text('numero_transacciones')" />
+        </p>
+        <p>
+          <span ng-bind-html="label('monto_promedio')" />
+          <span ng-bind-html="text('monto_promedio')" />
+        </p>
+        <p>
+          <span ng-bind-html="label('monto_total')" />
+          <span ng-bind-html="text('monto_total')" />
+        </p>
+        <p>
+          <span ng-bind-html="label('monto_maximo')" />
+          <span ng-bind-html="text('monto_maximo')" />
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="hide-in-preview cr-flex">
+    <div flex="">
+      <div class="cr-box">
+        <h4 class="cr-border-bottom">Perfilamiento de Riesgo Inteligente</h4>
+        <p>
+          <span ng-bind-html="label('factor_riesgo')" />
+          <span ng-bind-html="text('factor_riesgo')" />
+        </p>
+        <div id="nivel_riesgo" flex="">
+          <p>
+            <span ng-bind-html="label('nivel_riesgo')" />
+            <span class="cr-alert" ng-bind-html="text('nivel_riesgo')" />
+          </p>
+        </div>
+        <p>
+          <span ng-bind-html="label('marca')" />
+          <span ng-bind-html="text('marca')" />
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
